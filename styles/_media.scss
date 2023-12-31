@@ -1,4 +1,44 @@
+@media (min-width: 317) and (max-width: 407) {
+    .right-header{
+        margin: none;
+        .name{
+            font-size: 2rem !important;
+        }
+        p{
+            font-size: 1rem !important;
+        }
+    }
+    
+}
 
+
+@media (min-width: 440px) and (max-width: 563px) {
+    .show-on-mob{
+      transform: translateY(28%);
+    }
+    .left-header .image{
+        transform: scale(1.4) !important;
+    }
+}
+    
+    @media (min-width: 563px) and (max-width: 768px) {
+        .show-on-mob{
+          transform: translateY(28%);
+        }
+        .left-header .image{
+            transform: scale(1.4) !important;
+            img{
+                object-fit: contain !important;
+            }
+        }
+      }
+
+   
+     
+    
+    
+     
+  
 
 
 @media screen and (max-width: 768px) {
@@ -6,7 +46,7 @@
     
 section{
    
-    padding: 3rem 4rem; //top-bottom left-right
+    padding: 3rem 1rem; //top-bottom left-right
 }
 
 .separate span { color: var(--color-secondary);
@@ -31,6 +71,10 @@ section{
     }
     
   
+.light-mode .left-header .image{
+    background-color: #C4A484;
+}
+
 
 
     header{
@@ -38,7 +82,7 @@ section{
     }
       
     .theme-btn{
-        position: absolute;
+        position: fixed;
         width: 50px;
         height: 50px;
 
@@ -52,38 +96,90 @@ section{
     }
 
     .left-header{
-        grid-row: 2;
+         
+         transform: scaleY(1);   
+         height: 100%;
+         color: white;
+
 
         .h-shape{
             display: none;
         }
-    }
-      .right-header{
-        grid-row: 1;
-        padding-right: 0rem !important;
-        width: 90%;
-        margin: 0 auto;
-        .name{
-            font-size: 2.5rem !important;
-            text-align: center;
-            padding-top: 3rem;
+        .image{
+            transform: scale(1.2);   
+            position: relative;
+            margin: 0 auto !important;
+            width: 100% !important;
+           
+         img{
+            filter: grayscale(0%) !important;
+            object-position: top !important;
+
         }
     }
-    .header-content .left-header .image{
-        margin: 0 auto;
-        width: 90%;
+        .show-on-mob{
+            display: inline !important;
+            position: relative;
+            padding: 20px !important;
+            
+            .name1{
+                font-size: 1.5rem !important;
+                padding-top: 10rem;
+                span{
+                    color: var(--color-secondary);
+                }
+            }
+            p{
+                padding-bottom: 10px;
+            }
+        
+        }
+    
     }
 
-  
-    
-    .header-content .left-header .image{
-        margin: 0 auto;
-        width: 100%;
+    .separate .design{
+        display: none;
     }
-    .light-mode .right-header{
+
+    .right-header{
+        display: none !important;
+    }
+    
+   /* .right-header{
+        position: absolute;
+        padding-right: 0rem !important;
+        width: 100%;
+        transform: translateY(65%);
+       // margin-left: 20px !important ;
+        padding: 0 20px !important ;
+          .name{
+              font-size: 20px !important;
+        //    text-align: center;
+            padding-top: 3rem;
+            margin: none;
+            padding-bottom: 0%;
+        }
+        p{
+            font-size: 14px !important;
+            margin: 0.5rem 0rem !important;
+
+        }
+        .hide-on-Desktop{
+            display: inline !important;
+        }
+
+        .hide-on-Mobile{
+            display: none !important;
+        }
+    }*/
+
+
+    
+
+ /*   .light-mode .right-header{
 
         color: #FFF;
-    }
+    }*/
 
     .controls{
         top: auto;
@@ -94,6 +190,7 @@ section{
         transform: translateX(-50%);
         width: 100%;
         background-color: var(--color-black);
+        position: fixed;
         .control{
             margin: 1rem .3rem;
         }
@@ -103,9 +200,19 @@ section{
         display: flex;
         flex-direction: column;
         .right-about{
-            display: flex;
-            flex-direction: column;
+          //  display: flex;
+           // flex-direction: column;
             padding-top: 2.5rem;
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-gap: 10px;
+            .about-item .abt-text .large-text{
+                font-size: 1.5rem;
+                .small-text{
+                    font-size:1rem;
+                }
+
+        }
+
         }
         .left-about{
             padding-right: 0;
@@ -113,6 +220,7 @@ section{
                 padding-left: 0;
             }
         }
+    
     }
 
 
@@ -125,15 +233,21 @@ section{
         }
     }
 
+    .timeline{
+        margin-bottom: 6rem;
+    }
+
     .portfolios{
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
+        margin-bottom: 6rem;
     }
 
     .blogs{
         display: flex;
         flex-direction: column;
+        margin-bottom: 6rem;
         }
 
     .contact-content-container{
@@ -146,6 +260,7 @@ section{
     }
     .contact-content-container .right-contact{
         flex-direction: column;
+        margin-bottom: 6rem;
 
     }
 
@@ -170,17 +285,17 @@ section{
         h2{
             font-size: 2rem;
             span{
-                font-size: 2.3rem;
+                font-size: 2rem;
             }
             .bg-text{
-                font-size: 3rem;
+                display: none;
             }
         }
     }
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1115px) {
   
     
     section{
@@ -197,10 +312,10 @@ section{
             width: 100%;
             margin: none;
             .name{
-                font-size: 2.5rem !important;
+                font-size: 2rem !important;
             }
             p{
-                font-size: 1.5rem !important;
+                font-size: 1rem !important;
             }
         }
      
@@ -222,10 +337,16 @@ section{
         }
 
         .about-container{
-            grid-template-columns:  2fr 1fr !important;
-            .left-about{
-                padding-right: 2rem;
-            }
+            display: flex;
+            flex-direction: column;
+          .left-about{
+            padding-right: 0% !important;
+          }
+            .right-about{
+
+            padding-top: 2rem;     
+
+       }
         }
     
     
@@ -265,111 +386,3 @@ section{
             }
         }
     }
-/*@media screen and (max-width:1432px){
-    .container{
-        padding: 7rem 11rem;
-    }
-
-    .contact-content-con{
-        flex-direction: column;
-        .right-contact{
-            margin-left: 0;
-            margin-top: 2.5rem;
-        }
-        
-    }
-    .contact-content-con .right-contact .i-c-2{
-        flex-direction: column;
-    }
-    .contact-content-con .right-contact .i-c-2 :last-child{
-        margin-left: 0;
-        margin-top: 1.5rem;
-    }
-
-    .contact-content-con .right-contact{
-        margin-bottom: 6rem;
-    }
-
-    .main-title{
-        h2{
-            .bg-text{
-                font-size: 5.5rem;
-            }
-        }
-    }
-    
-}
-
-
-
-
-@media screen and (max-width:1250px){
-    .blogs{
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 6rem;
-    }
-    .portfolios{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .header-content .right-header{
-        padding-right: 9rem;
-    }
-
-}
-
-
-@media screen and (max-width:1070px){
-    .about-container{
-        grid-template-columns: repeat(1, 1fr);
-        .right-about{
-            padding-top: 2.5rem;
-        }
-    }
-    .main-title{
-        h2{
-            font-size: 4rem;
-            span{
-                font-size: 4rem;
-            }
-            .bg-text{
-                font-size: 4.5rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:970px){
-    .container{
-        padding: 7rem 6rem;
-    }
-    .about-container .left-about{
-        padding-right: 0rem;
-    }
-    .header-content{
-        grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
-    }
-
-    .left-header{
-        .h-shape{
-            display: none;
-        }
-        .image{
-            width: 90% !important;
-            margin: 0 auto !important;
-            
-        }
-    }
-    .right-header{
-        grid-row: 1;
-        padding-right: 0rem !important;
-        width: 90%;
-        margin: 0 auto;
-        .name{
-            font-size: 2.5rem !important;
-            text-align: center;
-            padding-top: 3rem;
-        }
-    }
-}
-*/

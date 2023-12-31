@@ -130,7 +130,7 @@ section{
 
     position: fixed;
     z-index: 10;
-    top: 50%;
+    top: 55%;
     right: 3%;
     display: flex;
     flex-direction: column;
@@ -230,6 +230,10 @@ section{
                 }
             }
         }
+
+        .show-on-mob{
+            display: none;
+        }
     }
 
     .right-header{
@@ -247,6 +251,9 @@ section{
             margin: 1.5rem 0;
             line-height: 2rem;
         }
+ 
+
+
     }
 }
 
@@ -301,7 +308,7 @@ section{
 
 .about-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 4fr 1fr;
     padding-top: 3.5rem;
     padding-bottom: 5rem;
     margin: none;
@@ -793,4 +800,4 @@ section{
 
 }
 
-@import './media_gpt';
+@import './media';
