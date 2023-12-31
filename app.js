@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('.section');
-const sectBtns = document.querySelectorAll('.controls');
+//const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
@@ -18,11 +18,11 @@ function PageTransitions(){
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;
         if(id){
-            //resmove selected from the other btns
-            sectBtns.forEach((btn) =>{
-                btn.classList.remove('active')
+            //remove selected from the other btns
+            sectBtn.forEach((btn) =>{
+                btn.classList.remove('active1')
             })
-            e.target.classList.add('active')
+            e.target.classList.add('active1')
 
             //hide other sections
             sections.forEach((section)=>{

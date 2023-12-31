@@ -74,11 +74,13 @@ section{
 
 .section{
 
-     transform: translateY(-100%) scale(0);
+    // transform: translateY(-100%) scale(0);
      transition: var(--smooth-change);
-     background-color: var(--color-primary);
+   //  background-color: var(--color-primary);
+   display: none;
+    transform: translateY(0) scale(1);
     }
-
+/*
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
@@ -108,7 +110,7 @@ section{
     transform: translateY(0) scale(1);
 
 }
-
+*/
 .active{
     display: block;
     animation: scaleAnim 1s ease-in-out;
