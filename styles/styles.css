@@ -769,18 +769,18 @@ section {
 }
 @media (min-width: 440px) and (max-width: 563px) {
   .show-on-mob {
-    transform: translateY(28%);
+    transform: translateY(15%);
   }
   .left-header .image {
-    transform: scale(1.4) !important;
+    transform: scale(1.2) !important;
   }
 }
 @media (min-width: 563px) and (max-width: 768px) {
   .show-on-mob {
-    transform: translateY(28%);
+    transform: translateY(8%);
   }
   .left-header .image {
-    transform: scale(1.4) !important;
+    transform: scale(1.2) !important;
   }
   .left-header .image img {
     -o-object-fit: contain !important;
